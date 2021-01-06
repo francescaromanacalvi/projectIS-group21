@@ -12,6 +12,7 @@ class Participant(db.Model):
     u_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
     e_id = db.Column(db.Integer, db.ForeignKey('event.id'), primary_key=True)
 
+class User2(
 #Participant = db.Table('Participant',
                     #  db.Column('user_id',db.Integer, db.ForeignKey('user.id')),
                     #  db.Column('event_id',db.Integer, db.ForeignKey('event.id'))
